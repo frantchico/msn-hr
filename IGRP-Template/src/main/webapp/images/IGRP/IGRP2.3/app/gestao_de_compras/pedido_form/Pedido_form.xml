@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_de_compras/pedido_form/Pedido_form.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Pedido_form</page>
+    <app>gestao_de_compras</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_compras.pages</package_db>
+        <package_html>Pedido_form</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=96</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Pedido Form</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p><span style='font-family:Comic Sans MS,cursive;'><span style='font-size:20px;'>Pedido de Compras</span></span></p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <justificacao name="p_justificacao" type="textarea" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Justificação</label>
+                    <value>Doloremque perspiciatis natus iste adipiscing omnis unde perspiciatis anim sit ut labore consectetur magna aliqua</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </justificacao>
+            </fields>
+        </form_1>
+        <formlist_1 type="formlist" xml-type="formlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <descricao name="p_descricao" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" inputmask="" right="false" desc="true">
+                    <label>Descrição</label>
+                </descricao>
+                <quantidade name="p_quantidade" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" right="false" java-type="" total_col="false" total_row="false" totalrow="false" desc="true">
+                    <label>Quantidade</label>
+                </quantidade>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Laudantium magna mollit dolor ipsum</descricao>
+                        <descricao_desc name="p_descricao_desc">Laudantium magna mollit dolor ipsum</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">188</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">188</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Consectetur doloremque doloremque magna iste</descricao>
+                        <descricao_desc name="p_descricao_desc">Consectetur doloremque doloremque magna iste</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">23</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">23</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Labore natus rem accusantium rem</descricao>
+                        <descricao_desc name="p_descricao_desc">Labore natus rem accusantium rem</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">141</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">141</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Doloremque ut ipsum unde omnis</descricao>
+                        <descricao_desc name="p_descricao_desc">Doloremque ut ipsum unde omnis</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">225</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">225</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Magna sit lorem dolor stract</descricao>
+                        <descricao_desc name="p_descricao_desc">Magna sit lorem dolor stract</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">181</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">181</quantidade_desc>
+                    </row>
+                </value>
+            </table>
+        </formlist_1>
+    </content>
+    <blockly></blockly>
+</rows>

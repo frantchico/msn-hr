@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_de_recursos_humanos/dashboard/Dashboard.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Dashboard</page>
+    <app>gestao_de_recursos_humanos</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_recursos_humanos.pages</package_db>
+        <package_html>Dashboard</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=88</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Dashboard</title>
+        <paragraph_1 type="paragraph" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <paragraph_1_text type="text" name="p_paragraph_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p><span style='font-family:Comic Sans MS,cursive;'><span style='font-size:28px;'>A empresa est&aacute; crescendo, vamos ver o hist&oacute;rico de contrata&ccedil;&otilde;es</span></span></p>
+]]>
+                    </value>
+                </paragraph_1_text>
+            </fields>
+        </paragraph_1>
+        <form_1 type="form" xml-type="form" title="Filtrar por..." gen-type="container" gen-group="">
+            <fields>
+                <departamento_id name="p_departamento_id" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Departamento</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </departamento_id>
+                <funcao_id name="p_funcao_id" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Função</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </funcao_id>
+            </fields>
+            <tools-bar>
+                <item id="button_3487_9a97" type="form" code="" class="grey" rel="filtrar" custom_return="true" refresh_components="timeline_1">
+                    <title>Filtrar</title>
+                    <app>gestao_de_recursos_humanos</app>
+                    <page>Lista_de_empregados</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_recursos_humanos/lista_de_empregados/Lista_de_empregados.xml?</parameter>
+                    <target>submit_ajax</target>
+                    <img>grey|fa-filter</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_recursos_humanos/lista_de_empregados/Lista_de_empregados.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <timeline_1 type="timeline" xml-type="table" title="Evolução de Contrações" gen-type="container" gen-group="">
+            <fields>
+                <timeline_1_icon type="img" maxlength="30">
+                    <label>Icon</label>
+                </timeline_1_icon>
+                <timeline_1_hd type="text" maxlength="40">
+                    <label>Header</label>
+                </timeline_1_hd>
+                <timeline_1_date type="date" maxlength="40">
+                    <label>Date</label>
+                </timeline_1_date>
+                <timeline_1_text type="text" maxlength="4000">
+                    <label>Content</label>
+                </timeline_1_text>
+                <timeline_1_btn type="link" target="modal" maxlength="4000">
+                    <label>Button</label>
+                </timeline_1_btn>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <timeline_1_icon>fa-check</timeline_1_icon>
+                        <timeline_1_hd>Mollit totam ut elit sit</timeline_1_hd>
+                        <timeline_1_date>1 de Out de 2013</timeline_1_date>
+                        <timeline_1_text>Labore laudantium sit anim sed totam laudantium elit officia iste omnis iste deserunt deserunt voluptatem stract natus deserunt officia elit magna ame</timeline_1_text>
+                        <timeline_1_btn>button</timeline_1_btn>
+                        <timeline_1_btn_desc>Link</timeline_1_btn_desc>
+                    </row>
+                    <row>
+                        <timeline_1_icon>fa-check</timeline_1_icon>
+                        <timeline_1_hd>Sed ipsum doloremque ipsum lau</timeline_1_hd>
+                        <timeline_1_date>2 de Out de 2012</timeline_1_date>
+                        <timeline_1_text>Officia magna laudantium ut stract magna ipsum unde sit ipsum iste perspiciatis labore dolor consectetur omnis totam ipsum consectetur aliqua dolor ip</timeline_1_text>
+                        <timeline_1_btn>button</timeline_1_btn>
+                        <timeline_1_btn_desc>Link</timeline_1_btn_desc>
+                    </row>
+                    <row>
+                        <timeline_1_icon>fa-check</timeline_1_icon>
+                        <timeline_1_hd>Rem anim deserunt natus lorem</timeline_1_hd>
+                        <timeline_1_date>3 de Out de 2011</timeline_1_date>
+                        <timeline_1_text>Aliqua sit unde dolor natus ipsum anim magna natus doloremque magna lorem sed omnis mollit magna lorem voluptatem deserunt totam amet omnis totam rem</timeline_1_text>
+                        <timeline_1_btn>button</timeline_1_btn>
+                        <timeline_1_btn_desc>Link</timeline_1_btn_desc>
+                    </row>
+                </value>
+            </table>
+        </timeline_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="combo_dao">Combo Dao</import>
+            <import type="dao">TDepartments</import>
+            <import type="dao">TJobs</import>
+            <import type="dao">TEmployees</import>
+            <import type="fields">LocalDate</import>
+        </imports>
+        <xml>
+            <block type="controller" id=",8,1IjbG?.ykY(c17]Ap" x="537" y="88">
+                <statement name="index">
+                    <block type="combo_dao" id="l`_czX(UWvm1DW865]PW" inline="true">
+                        <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="selecao">departamento_id</field>
+                        <field name="dao">TDepartments</field>
+                        <field name="selecionar">TRUE</field>
+                        <statement name="key_val">
+                            <block type="option_dao" id="!`t+{)M9T?.T1?XzGdHE" inline="true">
+                                <value name="key_val">
+                                    <block type="get-dao-TDepartments" id="K77KJue~Ac=B0p8i`kes">
+                                        <mutation hover_type="Integer_PK#::departmentId"></mutation>
+                                        <field name="DAO_FIELD">Integer_PK#::departmentId</field>
+                                    </block>
+                                </value>
+                                <value name="value_val">
+                                    <block type="get-dao-TDepartments" id="u`V6+kqdFL,9_J:]oq0x">
+                                        <mutation hover_type="String::departmentName"></mutation>
+                                        <field name="DAO_FIELD">String::departmentName</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </statement>
+                        <next>
+                            <block type="combo_dao" id="9-FXuiWwL?6[o?:QlLn`" inline="true">
+                                <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                                <field name="selecao">funcao_id</field>
+                                <field name="dao">TJobs</field>
+                                <field name="selecionar">TRUE</field>
+                                <statement name="key_val">
+                                    <block type="option_dao" id="W@^)v3M}9AaZ;qrht%GK" inline="true">
+                                        <value name="key_val">
+                                            <block type="get-dao-TJobs" id="z^Xk`jH/?R!.CE?Zcf]]">
+                                                <mutation hover_type="Integer_PK#::jobId"></mutation>
+                                                <field name="DAO_FIELD">Integer_PK#::jobId</field>
+                                            </block>
+                                        </value>
+                                        <value name="value_val">
+                                            <block type="get-dao-TJobs" id="nNG_E0%AXh#I1(|2-?Nw">
+                                                <mutation hover_type="String::jobTitle"></mutation>
+                                                <field name="DAO_FIELD">String::jobTitle</field>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </statement>
+                                <next>
+                                    <block type="listar_timeline_1" id="O`|3XKCG{RfHd!`m,/V{" inline="true">
+                                        <mutation order="order_by_desc" operation="null" limit="TODOSS" collectors="null" crud="null" statistdrop="null" ajax="null" count="1" mutation-1="andWhere"></mutation>
+                                        <field name="dao">TEmployees</field>
+                                        <field name="FILL">FALSE</field>
+                                        <field name="orderdrop">order_by_desc</field>
+                                        <field name="find">TODOSS</field>
+                                        <field name="limit"></field>
+                                        <field name="ADD1FILTER">andWhere</field>
+                                        <field name="ADD1WHERE">WHERE_EQ</field>
+                                        <value name="order_value">
+                                            <block type="get-dao-TEmployees" id="Ji2:V+V7nYi33uI.M+KA">
+                                                <mutation hover_type="LocalDate::hireDate"></mutation>
+                                                <field name="DAO_FIELD">LocalDate::hireDate</field>
+                                            </block>
+                                        </value>
+                                        <statement name="value2">
+                                            <block type="rowtableImage::timeline_1_icon" id="uBv3J(FX:OMQ;v,]I0|r">
+                                                <value name="fields_model">
+                                                    <block type="text" id="HQ~Q|amW-ges[5A:IX`T">
+                                                        <field name="TEXT">fa-check</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="rowtableString::timeline_1_hd" id="8=.[r/|O%:[{DTaLpk80">
+                                                        <value name="fields_model">
+                                                            <block type="get-dao-TEmployees" id="Rk*43DYrBn6h[ro?J?e(">
+                                                                <mutation hover_type="TDepartments_FK#::departmentId"></mutation>
+                                                                <field name="DAO_FIELD">TDepartments_FK#::departmentId</field>
+                                                                <value name="dao_rela">
+                                                                    <block type="get-dao-TDepartments" id="%f^-#6NS3Ov=b)k3b|,Y">
+                                                                        <mutation hover_type="String::departmentName"></mutation>
+                                                                        <field name="DAO_FIELD">String::departmentName</field>
+                                                                    </block>
+                                                                </value>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="rowtableString::timeline_1_date" id="9~1VX54PY3NfQWgl(@VS">
+                                                                <value name="fields_model">
+                                                                    <block type="get-dao-TEmployees" id="FGebPe}{8I4]!/?J]nVV">
+                                                                        <mutation hover_type="LocalDate::hireDate"></mutation>
+                                                                        <field name="DAO_FIELD">LocalDate::hireDate</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="rowtableString::timeline_1_text" id="oM{crd~vHN;Qj=FCF~li">
+                                                                        <value name="fields_model">
+                                                                            <block type="concaty" id="nxig`2NtS=l2@,@BBfsG" inline="true">
+                                                                                <mutation count="2"></mutation>
+                                                                                <value name="concat_value">
+                                                                                    <block type="get-dao-TEmployees" id="WypX*O=:j%%~DY|FN.FP">
+                                                                                        <mutation hover_type="String::firstName"></mutation>
+                                                                                        <field name="DAO_FIELD">String::firstName</field>
+                                                                                    </block>
+                                                                                </value>
+                                                                                <value name="CONCAT1">
+                                                                                    <block type="text" id="3oy?/jBGr@71%.rktKbS">
+                                                                                        <field name="TEXT"></field>
+                                                                                    </block>
+                                                                                </value>
+                                                                                <value name="CONCAT2">
+                                                                                    <block type="get-dao-TEmployees" id="}V6+fev:364?w5q%i8EG">
+                                                                                        <mutation hover_type="String::lastName"></mutation>
+                                                                                        <field name="DAO_FIELD">String::lastName</field>
+                                                                                    </block>
+                                                                                </value>
+                                                                            </block>
+                                                                        </value>
+                                                                        <next>
+                                                                            <block type="rowtableLink::timeline_1_btn" id="gZ_tWMIv~?bfC`g=?LI2">
+                                                                                <value name="fields_model">
+                                                                                    <block type="core_fn_link" id="m^[{,MM8.-i2+teqn*:2" inline="true">
+                                                                                        <mutation count="0"></mutation>
+                                                                                        <field name="value2">gestao_de_recursos_humanos</field>
+                                                                                        <field name="value3">Funcionario</field>
+                                                                                        <field name="value4">index</field>
+                                                                                    </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                    <block type="rowtableString::timeline_1_btn_desc" id="PD%@6u=J;lyM=8Nps]Ci">
+                                                                                        <value name="fields_model">
+                                                                                            <block type="text" id="`%)@}_i[P0?8^5DvI[ed">
+                                                                                                <field name="TEXT">Ver Detalhes</field>
+                                                                                            </block>
+                                                                                        </value>
+                                                                                    </block>
+                                                                                </next>
+                                                                            </block>
+                                                                        </next>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </statement>
+                                        <value name="ADD1">
+                                            <block type="get-dao-TEmployees" id="-/AXE~P0r!OOu4jiA|GF">
+                                                <mutation hover_type="TDepartments_FK#::departmentId"></mutation>
+                                                <field name="DAO_FIELD">TDepartments_FK#::departmentId</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TDepartments" id="vUt,G:-6X3#Vqx5d^S1J">
+                                                        <mutation hover_type="Integer_PK#::departmentId"></mutation>
+                                                        <field name="DAO_FIELD">Integer_PK#::departmentId</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                        <value name="ADD1STATE2">
+                                            <block type="mod_formform_1" id="lDw1m1,-m)S2%kWrDRrG">
+                                                <field name="get_model">String::departamento_id</field>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </next>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+                <statement name="filtrar">
+                    <block type="custombutton" id="Fqx,w+:!M=3N+73-sLTM" inline="true">
+                        <field name="return">forward</field>
+                        <field name="page">Dashboard</field>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>
