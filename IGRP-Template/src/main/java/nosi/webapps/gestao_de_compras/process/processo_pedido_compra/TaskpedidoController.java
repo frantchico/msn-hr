@@ -19,7 +19,7 @@ import nosi.webapps.gestao_de_compras.pages.pedido_form.Pedido_formView;
 
 /**
  *demo@nosi.cv
- *05-10-2022
+ *19-10-2022
 */
 
 public class TaskpedidoController extends BPMNTaskController {
@@ -39,7 +39,7 @@ public class TaskpedidoController extends BPMNTaskController {
 	public Response actionSave() throws IOException, ServletException, IllegalArgumentException, IllegalAccessException {
 
 		/*----#start-code(save)----*/
-
+Core.setMessageInfo("save");
 		/*----#end-code----*/
 
 		return super.save();

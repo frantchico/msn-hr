@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_de_compras/entrega/Entrega.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Entrega</page>
+    <app>gestao_de_compras</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_compras.pages</package_db>
+        <package_html>Entrega</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=207</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Entrega</title>
+        <box_1 type="box" xml-type="form" gen-type="container" gen-group="">
+            <fields/>
+        </box_1>
+        <view_1 type="view" xml-type="view" gen-type="container" gen-group="">
+            <fields>
+                <joja name="p_joja" type="text" maxlength="250" class="default" iconColor="#333" iconClass="" img="" showlabel="true">
+                    <label>Joja</label>
+                    <value>Perspiciatis sed perspiciatis sed ipsum</value>
+                </joja>
+                <total_item name="p_total_item" type="text" maxlength="250" class="default" iconColor="#333" iconClass="" img="" showlabel="true">
+                    <label>Total Item</label>
+                    <value>Ut unde totam sed omnis</value>
+                </total_item>
+                <custo_total name="p_custo_total" type="text" maxlength="250" class="default" iconColor="#333" iconClass="" img="" showlabel="true">
+                    <label>Custo Total</label>
+                    <value>Sit ut mollit elit adipiscing</value>
+                </custo_total>
+            </fields>
+        </view_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <produto name="p_produto" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Produto</label>
+                </produto>
+                <quantidade name="p_quantidade" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Quantidade</label>
+                </quantidade>
+                <custo name="p_custo" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" total_footer="false" group_in="" java-type="BigDecimal">
+                    <label>Custo</label>
+                </custo>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <produto name="p_produto">Doloremque deserunt ut amet si</produto>
+                        <quantidade name="p_quantidade">Unde stract consectetur rem ip</quantidade>
+                        <custo name="p_custo">19</custo>
+                    </row>
+                    <row>
+                        <produto name="p_produto">Lorem mollit omnis mollit adip</produto>
+                        <quantidade name="p_quantidade">Stract omnis amet officia lore</quantidade>
+                        <custo name="p_custo">1</custo>
+                    </row>
+                    <row>
+                        <produto name="p_produto">Sit dolor aperiam iste unde</produto>
+                        <quantidade name="p_quantidade">Aperiam mollit ut magna laudan</quantidade>
+                        <custo name="p_custo">20</custo>
+                    </row>
+                    <row>
+                        <produto name="p_produto">Anim ut elit aliqua sed</produto>
+                        <quantidade name="p_quantidade">Sed elit dolor doloremque sit</quantidade>
+                        <custo name="p_custo">10</custo>
+                    </row>
+                    <row>
+                        <produto name="p_produto">Sit mollit ipsum sit anim</produto>
+                        <quantidade name="p_quantidade">Natus aliqua amet sit rem</quantidade>
+                        <custo name="p_custo">1</custo>
+                    </row>
+                </value>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

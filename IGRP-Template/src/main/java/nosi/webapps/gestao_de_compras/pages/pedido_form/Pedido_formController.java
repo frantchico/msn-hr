@@ -21,7 +21,7 @@ public class Pedido_formController extends Controller {
 		/*----#gen-example
 		  EXAMPLES COPY/PASTE:
 		  INFO: Core.query(null,... change 'null' to your db connection name, added in Application Builder.
-		model.loadFormlist_1(Core.query(null,"SELECT 'Magna elit natus amet perspiciatis' as descricao,'133' as quantidade "));
+		model.loadFormlist_1(Core.query(null,"SELECT 'Consectetur mollit voluptatem ut magna' as descricao,'19' as quantidade "));
 		  ----#gen-example */
 		/* Start-Code-Block (index) *//* End-Code-Block (index) */
 		/*----#start-code(index)----*/

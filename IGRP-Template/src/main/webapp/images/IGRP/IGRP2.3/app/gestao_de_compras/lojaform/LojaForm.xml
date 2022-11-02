@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_de_compras/lojaform/LojaForm.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>LojaForm</page>
+    <app>gestao_de_compras</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_compras.pages</package_db>
+        <package_html>LojaForm</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=198</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Loja</title>
+        <box_1 type="box" xml-type="form" title="Loja" gen-type="container" gen-group="">
+            <fields/>
+        </box_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <designacao name="p_designacao" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="Introduzir o nome da loja" desclabel="true" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Designação</label>
+                    <value>Natus amet magna perspiciatis aperiam</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </designacao>
+                <localizacao name="p_localizacao" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Localização</label>
+                    <value>Deserunt mollit aliqua elit lorem</value>
+                </localizacao>
+                <registado_por name="p_registado_por" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="true" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Registado por...</label>
+                    <value>Natus officia elit ut natus</value>
+                </registado_por>
+                <form_1_lookup_1 name="p_form_1_lookup_1" type="lookup" action="index" page="igrp_studio@Pesquisa_geografia" app="igrp_studio" lookup_eraser="false" lookup_type="LOOKUP" class="primary" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Lookup</label>
+                    <value/>
+                    <lookup>../images/IGRP/IGRP2.3/app/igrp_studio/pesquisa_geografia/Pesquisa_geografia.xml</lookup>
+                    <lookupParams>
+                        <param field-target="p_form_1_lookup_1">treemenu_1_tmid</param>
+                    </lookupParams>
+                </form_1_lookup_1>
+                <hidden name="p_id" type="hidden" maxlength="250" java-type="Integer" tooltip="false" disable_copy_paste="false" tag="id"/>
+                <hidden name="p_id_user" type="hidden" maxlength="250" java-type="Integer" tooltip="false" disable_copy_paste="false" tag="id_user"/>
+            </fields>
+        </form_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="gravar" refresh_components="">
+                <title>Gravar</title>
+                <app>gestao_de_compras</app>
+                <page>LojaForm</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>link|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/gestao_de_compras/lojaform/LojaForm.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly></blockly>
+</rows>

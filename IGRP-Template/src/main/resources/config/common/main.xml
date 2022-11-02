@@ -10,7 +10,7 @@
 	<entry key="igrp.datasource.connection-name">hibernate-igrp-core</entry>
 	
 	<!-- igrpweb workspace parameter (absolute path) -->
-	<entry key="igrp.workspace">C:\Local Disk D_8220222133\workspaces\msn\IGRP-Java-Template-Eclipse-master\IGRP-Template</entry> 
+	<entry key="igrp.workspace">C:\Users\frant\git\msn-hr\IGRP-Template</entry> 
 	
 	<!-- igrpweb authentication type parameter (db|ldap|oauth2-openid) -->
 	<entry key="igrp.authentication_type">db</entry> 

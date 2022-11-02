@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_de_compras/lojaslist/LojasList.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>LojasList</page>
+    <app>gestao_de_compras</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_compras.pages</package_db>
+        <package_html>LojasList</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=197</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Lojas</title>
+        <form_1 type="form" xml-type="form" title="Filtrar por..." gen-type="container" gen-group="">
+            <fields>
+                <localizacao_f name="p_localizacao_f" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Localização</label>
+                    <value>Unde iste anim stract mollit</value>
+                </localizacao_f>
+            </fields>
+            <tools-bar>
+                <item id="button_ec31_12f6" type="form" code="" class="link" rel="filtrar" custom_return="true" refresh_components="table_1">
+                    <title>Filtrar</title>
+                    <app>gestao_de_compras</app>
+                    <page>LojasList</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_compras/lojaslist/LojasList.xml?</parameter>
+                    <target>submit_ajax</target>
+                    <img>link|fa-search</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_compras/lojaslist/LojasList.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="adicionr_loja" refresh_components="">
+                <title>Adicionr Loja</title>
+                <app>gestao_de_compras</app>
+                <page>LojaForm</page>
+                <link>index</link>
+                <target>right_panel|refresh</target>
+                <img>link|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/gestao_de_compras/lojaform/LojaForm.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome>
+                <localizacao name="p_localizacao" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Localização</label>
+                </localizacao>
+                <registado_por name="p_registado_por" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Registado por...</label>
+                </registado_por>
+                <id name="p_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="Integer" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Totam lorem elit laudantium sit</nome>
+                        <localizacao name="p_localizacao">Totam aperiam doloremque sit ut</localizacao>
+                        <registado_por name="p_registado_por">Accusantium ipsum voluptatem sit officia</registado_por>
+                        <id name="p_id" tag="id">hidden-ca9a_6e66</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Anim amet officia dolor ipsum</nome>
+                        <localizacao name="p_localizacao">Ut doloremque anim laudantium consectetur</localizacao>
+                        <registado_por name="p_registado_por">Dolor accusantium rem consectetur adipiscing</registado_por>
+                        <id name="p_id" tag="id">hidden-3247_3d64</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Anim perspiciatis stract deserunt voluptatem</nome>
+                        <localizacao name="p_localizacao">Elit iste unde accusantium labore</localizacao>
+                        <registado_por name="p_registado_por">Deserunt sit laudantium totam amet</registado_por>
+                        <id name="p_id" tag="id">hidden-64d7_1f93</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Iste deserunt aperiam unde ut</nome>
+                        <localizacao name="p_localizacao">Magna stract laudantium anim adipiscing</localizacao>
+                        <registado_por name="p_registado_por">Lorem amet labore mollit ut</registado_por>
+                        <id name="p_id" tag="id">hidden-d2bc_23d9</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Perspiciatis aliqua perspiciatis unde ipsum</nome>
+                        <localizacao name="p_localizacao">Aperiam natus totam sed aliqua</localizacao>
+                        <registado_por name="p_registado_por">Mollit labore sit officia dolor</registado_por>
+                        <id name="p_id" tag="id">hidden-70b1_34a4</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_7a1f_29d7" type="specific" code="" class="link" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>gestao_de_compras</app>
+                        <page>LojaForm</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_compras/lojaform/LojaForm.xml?</parameter>
+                        <target>right_panel|refresh</target>
+                        <img>link|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_compras/lojaform/LojaForm.xml</preview>
+                    </item>
+                    <item id="button_106a_13a7" type="specific" code="" flg_transaction="true" class="link" rel="eliminar" refresh_components="table_1">
+                        <title>Eliminar</title>
+                        <app>gestao_de_compras</app>
+                        <page>LojasList</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_compras/lojaslist/LojasList.xml?</parameter>
+                        <target>submit_ajax</target>
+                        <img>link|fa-trash-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_compras/lojaslist/LojasList.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="dao">TblStore</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13">
+                <statement name="index">
+                    <block type="listar_table_1" id="[9_;!AAK!8CS@h15g[b1" inline="true">
+                        <mutation order="order_by_asc" operation="null" limit="TODOSS" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="dao">TblStore</field>
+                        <field name="FILL">FALSE</field>
+                        <field name="orderdrop">order_by_asc</field>
+                        <field name="find">TODOSS</field>
+                        <field name="limit"></field>
+                        <value name="order_value">
+                            <block type="get-dao-TblStore" id=".AXF]|VzF,.L6r4wD(gT">
+                                <mutation hover_type="String::description"></mutation>
+                                <field name="DAO_FIELD">String::description</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="rowtableString::nome" id="8rE+RuhySNdB7:4AZv%E">
+                                <value name="fields_model">
+                                    <block type="get-dao-TblStore" id="JAAaT6]TqLm],+qe+nj+">
+                                        <mutation hover_type="String::description"></mutation>
+                                        <field name="DAO_FIELD">String::description</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="rowtableString::localizacao" id="FI[~uZ,e4GI|wEZP_Co0">
+                                        <value name="fields_model">
+                                            <block type="get-dao-TblStore" id="JaNqYaTH5hQR[]%A1uQ?">
+                                                <mutation hover_type="String::location"></mutation>
+                                                <field name="DAO_FIELD">String::location</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="rowtableString::registado_por" id="7Z)LBe3,a31dEtC_pk2V">
+                                                <value name="fields_model">
+                                                    <block type="core_fun_get" id=":2r^/CNLC2]#]qVZuE)p">
+                                                        <mutation hover_type="String::get_username_by_id"></mutation>
+                                                        <field name="CORE_FUNCTION">String::get_username_by_id</field>
+                                                        <field name="value1">insert name param</field>
+                                                        <field name="domaindrop"></field>
+                                                        <field name="value2">gestao_de_compras</field>
+                                                        <field name="value3">Pedido_form</field>
+                                                        <field name="value4">name action</field>
+                                                        <value name="value_default">
+                                                            <block type="get-dao-TblStore" id="I@|+g(wykQ]E/:fH0D|l">
+                                                                <mutation hover_type="Integer::idUser"></mutation>
+                                                                <field name="DAO_FIELD">Integer::idUser</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="rowtableInteger::id" id="P:ox}pAQliG7{Px!p*%L">
+                                                        <value name="fields_model">
+                                                            <block type="get-dao-TblStore" id="BkD?]~dMBCq.t%G%@c~I">
+                                                                <mutation hover_type="Integer_PK#::id"></mutation>
+                                                                <field name="DAO_FIELD">Integer_PK#::id</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="add_isedit" id="I9pcfAy-+=KoR7uT6/0g">
+                                                                <field name="button">editar</field>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+                <statement name="filtrar">
+                    <block type="custombutton" id="m}d_H|8d~S)BD)~R8O+_" inline="true">
+                        <field name="return">forward</field>
+                        <field name="page">LojasList</field>
+                    </block>
+                </statement>
+                <statement name="editar">
+                    <block type="enviar_p" id="zv?q|*%hF|H_`.sd7rrL">
+                        <field name="iskey">id</field>
+                        <next>
+                            <block type="editar_dao" id="Q,B(XET#/h_{CTRpDUt/"></block>
+                        </next>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

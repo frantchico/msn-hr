@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_de_compras/produtoslist/ProdutosList.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>ProdutosList</page>
+    <app>gestao_de_compras</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_compras.pages</package_db>
+        <package_html>ProdutosList</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=199</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Produtos</title>
+        <form_1 type="form" xml-type="form" title="Filtra por..." gen-type="container" gen-group="">
+            <fields>
+                <nome_f name="p_nome_f" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nome</label>
+                    <value>Sit consectetur sit laudantium doloremque</value>
+                </nome_f>
+                <referencia_f name="p_referencia_f" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Referência</label>
+                    <value>Natus magna officia natus doloremque</value>
+                </referencia_f>
+            </fields>
+            <tools-bar>
+                <item id="button_e5a0_f340" type="form" code="" class="link" rel="filtar" custom_return="true" refresh_components="table_1">
+                    <title>Filtar</title>
+                    <app>gestao_de_compras</app>
+                    <page>ProdutosList</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_compras/produtoslist/ProdutosList.xml?</parameter>
+                    <target>submit_ajax</target>
+                    <img>link|fa-search</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_compras/produtoslist/ProdutosList.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="adicionar_produto" refresh_components="">
+                <title>Adicionar Produto</title>
+                <app>gestao_de_compras</app>
+                <page>ProdutoForm</page>
+                <link>index</link>
+                <target>right_panel|refresh</target>
+                <img>link|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/gestao_de_compras/produtoform/ProdutoForm.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <foto name="p_foto" type="img" persist="true" img="../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg" width="" height="" croppie="false" rounded="false" autoupload="false" maxlength="3000" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Foto</label>
+                </foto>
+                <produto name="p_produto" type="textarea" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Produto</label>
+                </produto>
+                <referencia name="p_referencia" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Referência</label>
+                </referencia>
+                <registado_por name="p_registado_por" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Registado por</label>
+                </registado_por>
+                <id name="p_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="Integer" tag="id"/>
+                <id_user name="p_id_user" type="hidden" maxlength="30" showLabel="true" iskey="false" group_in="" java-type="Integer" tag="id_user"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <foto name="p_foto">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</foto>
+                        <produto name="p_produto">Perspiciatis laudantium omnis lorem aperiam rem dolor sit lorem sit elit omnis perspiciatis voluptatem laudantium</produto>
+                        <referencia name="p_referencia">Dolor natus sit laudantium dolor</referencia>
+                        <registado_por name="p_registado_por">Accusantium deserunt voluptatem aperiam deserunt</registado_por>
+                        <id name="p_id" tag="id">hidden-bc52_d4b7</id>
+                        <id_user name="p_id_user" tag="id_user">hidden-e305_9841</id_user>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <foto name="p_foto">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</foto>
+                        <produto name="p_produto">Natus voluptatem rem aperiam officia iste officia omnis aliqua perspiciatis aliqua laudantium sed stract natus</produto>
+                        <referencia name="p_referencia">Sit laudantium lorem consectetur accusantium</referencia>
+                        <registado_por name="p_registado_por">Dolor rem elit accusantium stract</registado_por>
+                        <id name="p_id" tag="id">hidden-0839_1be9</id>
+                        <id_user name="p_id_user" tag="id_user">hidden-96f1_483b</id_user>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <foto name="p_foto">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</foto>
+                        <produto name="p_produto">Rem natus rem adipiscing ipsum accusantium deserunt aperiam mollit stract accusantium sit unde deserunt aperiam</produto>
+                        <referencia name="p_referencia">Sit laudantium amet dolor officia</referencia>
+                        <registado_por name="p_registado_por">Omnis labore amet perspiciatis laudantium</registado_por>
+                        <id name="p_id" tag="id">hidden-bf86_baed</id>
+                        <id_user name="p_id_user" tag="id_user">hidden-c2cb_4721</id_user>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <foto name="p_foto">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</foto>
+                        <produto name="p_produto">Unde adipiscing labore dolor doloremque elit deserunt unde aperiam adipiscing aperiam totam officia iste mollit</produto>
+                        <referencia name="p_referencia">Magna elit adipiscing sed voluptatem</referencia>
+                        <registado_por name="p_registado_por">Sed lorem ipsum aliqua ipsum</registado_por>
+                        <id name="p_id" tag="id">hidden-7b55_575c</id>
+                        <id_user name="p_id_user" tag="id_user">hidden-b0fc_90c5</id_user>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <foto name="p_foto">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</foto>
+                        <produto name="p_produto">Iste ipsum aperiam unde officia anim sit doloremque sed aliqua elit aliqua rem dolor anim</produto>
+                        <referencia name="p_referencia">Sed laudantium stract anim elit</referencia>
+                        <registado_por name="p_registado_por">Aperiam unde ipsum laudantium sit</registado_por>
+                        <id name="p_id" tag="id">hidden-a87b_fe78</id>
+                        <id_user name="p_id_user" tag="id_user">hidden-af29_83a6</id_user>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_a4d4_3b54" type="specific" code="" class="link" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>gestao_de_compras</app>
+                        <page>ProdutoForm</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_compras/produtoform/ProdutoForm.xml?</parameter>
+                        <target>right_panel|refresh</target>
+                        <img>link|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_compras/produtoform/ProdutoForm.xml</preview>
+                    </item>
+                    <item id="button_684d_cc4a" type="specific" code="" flg_transaction="true" class="link" rel="eliminar" refresh_components="table_1">
+                        <title>Eliminar</title>
+                        <app>gestao_de_compras</app>
+                        <page>ProdutosList</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_compras/produtoslist/ProdutosList.xml?</parameter>
+                        <target>submit_ajax</target>
+                        <img>link|fa-trash-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_compras/produtoslist/ProdutosList.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="dao">TblProduct</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="238" y="38">
+                <statement name="index">
+                    <block type="listar_table_1" id="]Cc[%*1`[B:a5X)4D23u" inline="true">
+                        <mutation order="order_by_asc" operation="null" limit="TODOSS" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="dao">TblProduct</field>
+                        <field name="FILL">FALSE</field>
+                        <field name="orderdrop">order_by_asc</field>
+                        <field name="find">TODOSS</field>
+                        <field name="limit"></field>
+                        <value name="order_value">
+                            <block type="get-dao-TblProduct" id="*sYR.b{nswL~lCHv(nqF">
+                                <mutation hover_type="String::description"></mutation>
+                                <field name="DAO_FIELD">String::description</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="rowtableImage::foto" id="]hOCn_Tw@d5QF23*rEOd">
+                                <value name="fields_model">
+                                    <block type="get-dao-TblProduct" id="X:|b1E%8wy7b2J?mmV3j">
+                                        <mutation hover_type="String::idFile"></mutation>
+                                        <field name="DAO_FIELD">String::idFile</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="rowtabletextarea::produto" id=".X3hxi|k}|x(Tp1Z`{S0">
+                                        <value name="fields_model">
+                                            <block type="get-dao-TblProduct" id="5S]E@BWIIUWlUjnrH1EU">
+                                                <mutation hover_type="String::description"></mutation>
+                                                <field name="DAO_FIELD">String::description</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="rowtableString::referencia" id="CZ9QW}^~tZ%vj#Sth1)@">
+                                                <value name="fields_model">
+                                                    <block type="get-dao-TblProduct" id="vpq,U__bS=41^FmwxS1A">
+                                                        <mutation hover_type="String::reference"></mutation>
+                                                        <field name="DAO_FIELD">String::reference</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="rowtableString::registado_por" id=":WE4{9oP71!+w}]ULm4}">
+                                                        <value name="fields_model">
+                                                            <block type="core_fun_get" id="!pEK;@[1VD);(+G[iCE(">
+                                                                <mutation hover_type="String::get_username_by_id"></mutation>
+                                                                <field name="CORE_FUNCTION">String::get_username_by_id</field>
+                                                                <field name="value1">insert name param</field>
+                                                                <field name="domaindrop"></field>
+                                                                <field name="value2">gestao_de_compras</field>
+                                                                <field name="value3">Pedido_form</field>
+                                                                <field name="value4">name action</field>
+                                                                <value name="value_default">
+                                                                    <block type="get-dao-TblProduct" id="6b%Iv(Lu)0oVeb)k/.j3">
+                                                                        <mutation hover_type="Integer::idUser"></mutation>
+                                                                        <field name="DAO_FIELD">Integer::idUser</field>
+                                                                    </block>
+                                                                </value>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="rowtableInteger::id" id="bUl:-P%zQ!HNVh#0pzX4">
+                                                                <value name="fields_model">
+                                                                    <block type="get-dao-TblProduct" id="y!Dz,@8x+?BnVbyk^i^#">
+                                                                        <mutation hover_type="Integer_PK#::id"></mutation>
+                                                                        <field name="DAO_FIELD">Integer_PK#::id</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="rowtableInteger::id_user" id="n=6TLRW|9ALVAY}+~HNe">
+                                                                        <value name="fields_model">
+                                                                            <block type="get-dao-TblProduct" id="O.MIgNGG7~4;apIHE,g[">
+                                                                                <mutation hover_type="Integer::idUser"></mutation>
+                                                                                <field name="DAO_FIELD">Integer::idUser</field>
+                                                                            </block>
+                                                                        </value>
+                                                                        <next>
+                                                                            <block type="enviar_p" id="%H~yB8=}Mu7dvx~9N?6U">
+                                                                                <field name="iskey">id</field>
+                                                                                <next>
+                                                                                    <block type="editar_dao" id="/X%kGm6j`]@{*M?uvHfs"></block>
+                                                                                </next>
+                                                                            </block>
+                                                                        </next>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+                <statement name="filtar">
+                    <block type="custombutton" id="vhnt_q5=c^cg?=r^crVU" inline="true">
+                        <field name="return">forward</field>
+                        <field name="page">ProdutosList</field>
+                    </block>
+                </statement>
+                <statement name="editar">
+                    <block type="enviar_p" id="0)ui`5qO).bZ*!hu0mSb">
+                        <field name="iskey">id</field>
+                        <next>
+                            <block type="editar_dao" id="B3LV5bhG}+`MJdMX-Y/a"></block>
+                        </next>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

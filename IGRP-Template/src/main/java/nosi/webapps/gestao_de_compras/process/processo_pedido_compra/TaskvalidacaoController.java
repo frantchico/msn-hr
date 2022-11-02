@@ -15,43 +15,42 @@ import nosi.webapps.gestao_de_compras.pages.validacao_form.Validacao_formView;
 
 /*----#end-code----*/
 
-
-
 /**
- *demo@nosi.cv
- *05-10-2022
-*/
+ * demo@nosi.cv 19-10-2022
+ */
 
 public class TaskvalidacaoController extends BPMNTaskController {
 
-	public Response actionIndex() throws IOException, ServletException, IllegalArgumentException, IllegalAccessException {
+	public Response actionIndex()
+			throws IOException, ServletException, IllegalArgumentException, IllegalAccessException {
 		Validacao_formView view = new Validacao_formView();
 		Validacao_form model = new Validacao_form();
 		model.load();
 
 		/*----#start-code(index)----*/
 		model.loadFromTask("pedido");
-		
-		Core.setMessageInfo("Process Variable p_justificacao=["+Core.getProcessVariable("processo_pedido_compra", "pedido_p_justificacao")+"]");
-		
-		Core.setMessageWarning("Task Variable p_justificacao=["+Core.getTaskVariable("pedido", "p_justificacao")+"]");
 
+		Core.setMessageInfo("Process Variable p_justificacao=["
+				+ Core.getProcessVariable("processo_pedido_compra", "pedido_p_justificacao") + "]");
+
+		Core.setMessageWarning(
+				"Task Variable p_justificacao=[" + Core.getTaskVariable("pedido", "p_justificacao") + "]");
 		/*----#end-code----*/
 
-		return super.index("gestao_de_compras",model,view,this);
+		return super.index("gestao_de_compras", model, view, this);
 	}
 
-	public Response actionSave() throws IOException, ServletException, IllegalArgumentException, IllegalAccessException {
+	public Response actionSave()
+			throws IOException, ServletException, IllegalArgumentException, IllegalAccessException {
 
 		/*----#start-code(save)----*/
 		Validacao_form model = new Validacao_form();
 		model.load();
 		int total = 0;
-		
-		if(model.getAprovar().equals("S"))
-		  total = model.getFormlist_1().stream().mapToInt(f-> Core.toInt(f.getQuantidade().getKey())).sum();
-		
-		
+
+		if (model.getAprovar().equals("S"))
+			total = model.getFormlist_1().stream().mapToInt(f -> Core.toInt(f.getQuantidade().getKey())).sum();
+
 		Core.setTaskVariableInt("p_total", total);
 		/*----#end-code----*/
 
@@ -66,12 +65,8 @@ public class TaskvalidacaoController extends BPMNTaskController {
 		return super.getOutputDocumentType();
 	}
 
-
-
 	/*----#start-code(custom_actions)----*/
 
 	/*----#end-code----*/
-
-
 
 }

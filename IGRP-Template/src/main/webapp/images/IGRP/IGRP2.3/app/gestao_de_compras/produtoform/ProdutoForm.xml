@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_de_compras/produtoform/ProdutoForm.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>ProdutoForm</page>
+    <app>gestao_de_compras</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_compras.pages</package_db>
+        <package_html>ProdutoForm</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=200</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Produto</title>
+        <box_1 type="box" xml-type="form" title="Produto" gen-type="container" gen-group="">
+            <fields/>
+        </box_1>
+        <form_2 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <foto name="p_foto" type="img" persist="true" img="../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg" width="150" height="150" croppie="true" rounded="false" autoupload="true" maxlength="250" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Foto</label>
+                    <value>../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</value>
+                </foto>
+            </fields>
+        </form_2>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <descricao name="p_descricao" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="Nome do produto" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Descrição</label>
+                    <value>Sit deserunt adipiscing ut stract</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </descricao>
+                <referencia name="p_referencia" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="Referencia do produto" desclabel="true" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Referência</label>
+                    <value>Sit elit sit consectetur adipiscing</value>
+                </referencia>
+                <file name="p_file" type="file" accept="application/pdf" targetrend="" multiple="false" rendvalue="false" maxlength="250" required="false" disabled="false" right="false" tooltip="false" disable_copy_paste="false" class="primary">
+                    <label>File</label>
+                    <value/>
+                </file>
+                <preco_unitario name="p_preco_unitario" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="BigDecimal" tooltip="false" disable_copy_paste="false">
+                    <label>Preço Unitario</label>
+                    <value>216</value>
+                </preco_unitario>
+                <registado_por name="p_registado_por" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="true" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Registado por...</label>
+                    <value>Totam accusantium voluptatem sed labore</value>
+                </registado_por>
+                <hidden name="p_id" type="hidden" maxlength="250" java-type="Integer" tooltip="false" disable_copy_paste="false" tag="id"/>
+                <hidden name="p_id_user" type="hidden" maxlength="250" java-type="Integer" tooltip="false" disable_copy_paste="false" tag="id_user"/>
+            </fields>
+        </form_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="guardar" refresh_components="">
+                <title>Guardar</title>
+                <app>gestao_de_compras</app>
+                <page>ProdutoForm</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>link|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/gestao_de_compras/produtoform/ProdutoForm.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="113" y="38"></block>
+        </xml>
+    </blockly>
+</rows>

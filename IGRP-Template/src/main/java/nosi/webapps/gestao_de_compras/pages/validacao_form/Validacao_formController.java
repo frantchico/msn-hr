@@ -22,7 +22,7 @@ public class Validacao_formController extends Controller {
 		/*----#gen-example
 		  EXAMPLES COPY/PASTE:
 		  INFO: Core.query(null,... change 'null' to your db connection name, added in Application Builder.
-		model.loadFormlist_1(Core.query(null,"SELECT 'Deserunt rem unde consectetur anim' as descricao,'76' as quantidade "));
+		model.loadFormlist_1(Core.query(null,"SELECT 'Deserunt voluptatem aperiam adipiscing sit' as descricao,'126' as quantidade "));
 		  ----#gen-example */
 		/* Start-Code-Block (index) *//* End-Code-Block (index) */
 		/*----#start-code(index)----*/
